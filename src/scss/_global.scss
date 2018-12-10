@@ -101,7 +101,7 @@ p {
 
 .bar-background-image {
   @extend .bg-pattern-full;
-  background-image: url("/images/sheps_sign.jpg");
+  background-image: url("/images/negroni.jpg");
 }
 
 .cocktails {
@@ -138,18 +138,47 @@ p {
 }
 
 .cocktails-background-image {
+  transform: scale(0.7);
   @extend .bg-pattern-full;
-  background-image: url("/images/drink-pineapple.jpg");
+  background-image: url("/images/peppersnew.jpg")
 }
 
 .restaurant {
   @extend .section-wrapper;
-  background-color: $white;
+  text-align: center;
+  color: $white;
+  font-size: $font-large;
+  padding: 4px 4px;
+  background-color: $black;
 }
+
+.restaurant-background-image-new {
+  @extend .bg-pattern-full;
+  background-image: url("/images/negroni.jpg");
+}
+.restauranttext {
+  text-align: center;
+  color: $white;
+  font-size: $font-large;
+  padding: 40px 40px;
+  background-color: $black;
+
+  @include breakpoint($medium) {
+    padding: 40px 60px;
+  }}
 
 .restaurant-background-image {
   @extend .bg-pattern-full;
-  background-image: url("/images/food-assorted.jpg");
+  background-image: url("/images/_F9A2946.jpg");
+  text-align: center;
+  color: $white;
+  font-size: $font-large;
+  padding: 40px 40px;
+  background-color: $black;
+
+  @include breakpoint($medium) {
+    padding: 40px 120px;
+  }
 }
 
 .brunch {
@@ -159,7 +188,7 @@ p {
 
 .brunch-background-image {
   @extend .bg-pattern-full;
-  background-image: url("/images/oysters.jpg");
+  background-image: url("/images/_F9A2946.jpg");
 }
 
 .menuImage {
